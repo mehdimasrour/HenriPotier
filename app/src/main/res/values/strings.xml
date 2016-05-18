@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HenriPotier</string>
+    <string name="title_book_detail">Book Detail</string>
+    <string name="cart">Cart</string>
+    <string name="isbn_details">ISBN : %s</string>
+    <string name="price_list" formatted="false" translatable="false">%.2f €</string>
+    <string name="price_detail" formatted="false">Price: %.2f €</string>
+    <string name="error_get_books">Error getting list of books</string>
+    <string name="cart_add">Add to cart</string>
+    <string name="book_added">%s added to cart</string>
+    <string name="error_add_book">Error adding the book to the cart</string>
+    <string name="sub_total" formatted="false">Sub total: %.2f €</string>
+    <string name="offer_applied">Offers: %s</string>
+    <string name="total_price" formatted="false">Total: %.2f€</string>
+    <string name="empty_cart">Your cart is empty !</string>
+</resources>

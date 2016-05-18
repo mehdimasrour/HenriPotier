@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.masrour.henripotier">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:name=".HenriPotierApp_"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activities.BookListActivity_"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.BookDetailActivity_"
+            android:label="@string/title_book_detail"
+            android:parentActivityName=".activities.BookListActivity_">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BookListActivity_" />
+        </activity>
+        <activity
+            android:name=".activities.CartActivity_"
+            android:label="@string/cart">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BookListActivity_" />
+        </activity>
+    </application>
+
+</manifest>
